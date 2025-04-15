@@ -1,0 +1,8 @@
+/static/heatmap/*
+/static/heatmap/*
+/static/heatmap/*
+/static/warnings/*
+/static/annotated/*
+/models/*.pt
+__pycache__/
+*.pyc
