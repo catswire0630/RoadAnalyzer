@@ -42,8 +42,8 @@ pip install -r requirements.txt #包含ultralytics、fastapi等依赖
 
 AAbackend/
 ├── static/                   # 前端静态文件    
-│   ├── index.html            # 主页面（检测、监控、问答等） 
-│   ├── login.html            # 登录页面  
+│   ├── index.html            # 主页面（检测、监控、问答等  
+│   ├── login.html            # 登录页面    
 │   ├── script.js             # 前端逻辑（导航、上传  
 │   ├── styles.css            # 样式（含黑夜模式）  
 │   ├── uploads/              # 上传文件存储  
