@@ -86,6 +86,8 @@ uvicorn main:app --reload
 
 ## :stars:感谢
 
-感谢[Ultralytics](https://github.com/ultralytics)提供的YOLO模型。
-感谢[魔鬼面具](https://github.com/z1069614715)提供的热力图展示功能。
-感谢(https://github.com/abewley/sort)算法支持
+感谢[Ultralytics](https://github.com/ultralytics)提供的YOLO模型。  
+感谢[魔鬼面具](https://github.com/z1069614715)提供的热力图展示功能。  
+感谢sort算法支持:https://github.com/abewley/sort  
+cooperate with[HAHMAM](https://github.com/HAHMAM)  
+
