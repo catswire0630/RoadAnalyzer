@@ -40,7 +40,7 @@ pip install -r requirements.txt #包含ultralytics、fastapi等依赖
 
 ## :hammer_and_wrench:项目结构
 
-AAbackend/
+AAbackend/  
 ├── static/                   # 前端静态文件    
 │   ├── index.html            # 主页面（检测、监控、问答等  
 │   ├── login.html            # 登录页面    
