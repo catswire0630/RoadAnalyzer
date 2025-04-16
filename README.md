@@ -41,31 +41,31 @@ pip install -r requirements.txt #包含ultralytics、fastapi等依赖
 ## :hammer_and_wrench:项目结构
 
 AAbackend/
-├── static/                    # 前端静态文件
-│   ├── index.html            # 主页面（检测、监控、问答等）
-│   ├── login.html            # 登录页面
-│   ├── script.js             # 前端逻辑（导航、上传、检测等）
-│   ├── styles.css            # 样式（含黑夜模式）
-│   ├── uploads/              # 上传文件存储
-│   ├── annotated/            # 检测结果（标注图片/视频）
-│   ├── warnings/             # 预警图片
-│   └── heatmap/              # 热力图
-├── routes/                   # FastAPI 路由
-│   ├── upload.py            # 文件上传
-│   ├── detect.py            # 检测逻辑
-│   ├── stream.py            # 实时监控流
-│   └── websocket.py         # WebSocket
-├── utils/                    # 工具模块
-│   ├── inference.py         # YOLO 推理（检测、跟踪、预警）
-│   ├── sort.py         # sort多目标跟踪算法
-│   └── yolov8_heatmap.py    # 热力图生成
-├── models/
-│   └── best.pt              # YOLOv8 模型
-├── database.py              # SQLite 数据库（记录检测、预警、问答）
-├── main.py                  # FastAPI 主程序
-├── READ.ME                  # README说明
-├── traffic_data.db          # SQLite 数据库文件
-└── requirements.txt         # 依赖
+├── static/                   # 前端静态文件    
+│   ├── index.html            # 主页面（检测、监控、问答等） 
+│   ├── login.html            # 登录页面  
+│   ├── script.js             # 前端逻辑（导航、上传  
+│   ├── styles.css            # 样式（含黑夜模式）  
+│   ├── uploads/              # 上传文件存储  
+│   ├── annotated/            # 检测结果（标注图片/视频）  
+│   ├── warnings/             # 预警图片  
+│   └── heatmap/              # 热力图  
+├── routes/                     # FastAPI 路由  
+│   ├── upload.py            # 文件上传  
+│   ├── detect.py            # 检测逻辑  
+│   ├── stream.py            # 实时监控流  
+│   └── websocket.py         # WebSocket  
+├── utils/                    # 工具模块  
+│   ├── inference.py         # YOLO 推理（检测、跟踪、预警）  
+│   ├── sort.py         # sort多目标跟踪算法   
+│   └── yolov8_heatmap.py    # 热力图生成  
+├── models/  
+│   └── best.pt              # YOLOv8 模型    
+├── database.py              # SQLite 数据库（记录检测、预警、问答）  
+├── main.py                  # FastAPI 主程序  
+├── READ.ME                  # README说明  
+├── traffic_data.db          # SQLite 数据库文件  
+└── requirements.txt         # 依赖  
 
 ## :handbag:使用说明
 
