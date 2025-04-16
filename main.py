@@ -17,6 +17,40 @@ import shutil
 
 app = FastAPI(title="Road Object Detection API")
 
+def init_db():
+    db_path = "traffic_data.db"
+    with sqlite3.connect(db_path) as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS warnings (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                track_id INTEGER,
+                warning_type TEXT,
+                image_path TEXT,
+                timestamp DATETIME
+            )
+        """)
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS detections (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                filename TEXT,
+                type TEXT,
+                timestamp DATETIME
+            )
+        """)
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS qa_records (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                question TEXT,
+                timestamp DATETIME
+            )
+        """)
+        conn.commit()
+
+@app.on_event("startup")
+async def startup_event():
+    init_db()
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
